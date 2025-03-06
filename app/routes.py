@@ -1,6 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for, flash, current_app
-from flask_mail import Message
-from app.utils import generate_resume_pdf
+from flask import Blueprint, render_template, current_app
 import os
 
 main = Blueprint('main', __name__)
