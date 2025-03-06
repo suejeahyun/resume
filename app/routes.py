@@ -1,4 +1,5 @@
-from flask import Blueprint, render_template, current_app
+from flask import Blueprint, render_template, current_app, send_file
+from app.utils import save_pdf, save_jpg
 import os
 
 main = Blueprint('main', __name__)
@@ -39,6 +40,15 @@ def portfolio():
                            cctv2_images=cctv2_images,
                            papercup_images=papercup_images)
 
+@main.route("/save_pdf")
+def download_pdf():
+    pdf_path = save_pdf()
+    return send_file(pdf_path, as_attachment=True)
+
+@main.route("/save_jpg")
+def download_jpg():
+    img_path = save_jpg()
+    return send_file(img_path, as_attachment=True)
 
 @main.route('/contact', methods=['GET', 'POST'])
 def contact():

@@ -1,5 +1,5 @@
 .content {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -63,4 +63,16 @@
 .btn.show {
     opacity: 1; /* 나타남 */
     transform: translateY(0); /* 원래 위치로 이동 */
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+h4:hover {
+    font-size: 1.4rem;
+    font-weight: bold;
+    transform: scale(1.1); /* 살짝 확대 */
 }

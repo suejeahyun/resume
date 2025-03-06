@@ -53,6 +53,8 @@ ul li a:hover {
     display: inline-block;
     width: 80%;
     max-width: 800px;
+    height: 80%;
+    max-height: 500px;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -114,4 +116,32 @@ ul li a:hover {
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.doIt {
+    background-color: #f0f0f0; /* 배경색 설정 */
+    padding: 20px; /* 내부 여백 추가 */
+    text-align: left; /* 텍스트 좌측 정렬 */
+    border-radius: 8px; /* 둥근 모서리 */
+}
+
+.doIt p {
+    margin-bottom: 10px; /* 문단 사이 간격 */
+}
+
+
+.skill {
+    background-color: #f0f0f0; /* 배경색 설정 */
+    padding: 20px; /* 내부 여백 추가 */
+    text-align: left; /* 텍스트 좌측 정렬 */
+    border-radius: 8px; /* 둥근 모서리 */
+}
+
+.skill p {
+    margin-bottom: 10px; /* 문단 사이 간격 */
+}
+
+
+.content {
+    margin-bottom: 100px;
 }
