@@ -1,10 +1,8 @@
 from flask import Flask
+from .routes import main
 
 def create_app():
     app = Flask(__name__)
-
-    # 블루프린트 등록
-    from app.routes import main
-    app.register_blueprint(main)
+    app.register_blueprint(main)  # Blueprint 등록
 
     return app
