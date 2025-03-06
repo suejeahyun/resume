@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}이력서{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/resume_style.css') }}">
+<h1>이력서</h1>
+<hr>
+<div class="introduction">
+    <img src="static/img/profile-image.jpg" alt="profile image" width="150" height="200" style="border-radius: 50%;">
+    <div>
+        <h2>서재현</h2>
+        <p> 📧 sjh11488@naver.com</p>
+        <p> 📱 010 - 7757 - 8255 </p>
+        <p> 📅 1999. 01. 02 </p>
+    </div>
+</div>
+<div class="Develop">
+    <p><h2>개발 직무<hr></h2> <span class="highlight">웹 풀스택 개발자</span></p>
+    <p><h2>기술 <hr></h2> <span class="highlight">Python</span>, <span class="highlight">Flask</span>, <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">Spyder</span>, <span class="highlight">OpenCV</span>, <span class="highlight">Numpy</span>, <span class="highlight">MySQL</span></p>
+</div>
+
+<div class="Education"> 
+    <h2> 학력 </h2>
+    <hr>
+    <div class="Education-grid">
+        <div class="Education-item">
+            <p>⚪ 2017. 09 중퇴</p>
+            <p>대학(2,3년)</p>
+            <p>백석예술대학교</p>
+            <p>실용음악과</p>
+        </div>
+        <div class="Education-item">
+            <p>⚪ 2014. 03 ~ 2017. 02</p>
+            <p>고등학교</p>
+            <p>서울대학교 사범대학교 부설고등학교</p>
+            <p>이과</p>
+        </div>
+    </div>
+</div>
+<div class="Education">
+    <h2>교육이력</h2>
+    <hr>
+    <p></p>
+    <div class="Education-item">
+        <p>⚪ 2024. 07 ~ 2025. 03</p>
+        <p>(기업연계형) AI를 이용한 스마트플랫폼 개발자 양성과정</p>
+        <p>MBC 아카데미 컴퓨터 학원</p>
+        <p>
+            <span class="highlight">Java</span>, 
+            <span class="highlight">Python</span>, 
+            <span class="highlight">C++</span>, 
+            <span class="highlight">Visual Studio Code</span>, 
+            <span class="highlight">Flask</span>, 
+            <span class="highlight">JSP</span>, 
+            <span class="highlight">NumPy</span>, 
+            <span class="highlight">MySQL</span>, 
+            <span class="highlight">MariaDB</span>, 
+            <span class="highlight">TensorFlow</span>, 
+            <span class="highlight">Spyder</span>, 
+            <span class="highlight">OpenCV</span>, 
+            <span class="highlight">Machine Learning</span>, 
+            <span class="highlight">Markdown</span>, 
+            <span class="highlight">Pandas</span>, 
+            <span class="highlight">R</span>, 
+            <span class="highlight">Spring</span>, 
+            <span class="highlight">GitHub</span>
+        </p>
+    </div>
+</div>
+
+<div class="Self-introduction">
+    <h2>자기소개서</h2>
+    <hr>
+    <p></p>
+    <div class="Education-item">
+        <h3>⚪ #자유로운 사고 방식</h3>
+        <p> 어려운 문제들을 마주하면 저는 이를 단순히 받아들이기보다는 "다른 방식으로 풀어낼 수 없을까?"라는 질문을 던집니다. </p>
+        <p> 풀스택 개발에서 문제를 해결할 때도 마찬가지입니다. 일반적으로 복잡하거나 잘 알려지지 않은 방식이 있을 때, 새로운 방법을 시도해보고 더 나은 해결책을 찾는 것을 중요시합니다. </p>
+        <p> 예를 들어, 작곡할 때 의도적인 불협화음을 조율하듯이, 웹 개발에서도 기존의 방식을 넘어 다양한 접근을 통해 더 나은 사용자 경험을 구현하려고 노력합니다. </p>
+        <p> 이렇게 창의적이고 혁신적인 방법을 통해, 저는 더 나은 웹 서비스를 제공하고자 하며, 프론트엔드와 백엔드를 아우르는 풀스택 개발자로서 사용자가 편리하고 직관적으로 서비스를 이용할 수 있도록 지속적으로 개선해 나갈 것입니다. </p>
+        <p> 문제를 단순히 해결하는 것을 넘어, 더 나은 방법을 모색하는 것이 바로 풀스택 개발자의 중요한 역할이라 믿습니다. </p>
+    </div>
+    <p></p>
+    <div class="Education-item">
+        <h3>⚪ #사용자 중심적</h3>
+        <p> 음악을 만들고 그 음악을 들었을 때, 그리고 사람들에게 들려주어 그들에게 희망과 긍정적인 영향을 미쳤을 때, 저는 큰 만족감을 얻었습니다. 그 경험은 저에게 ‘사람을 위한 창작’의 중요성을 일깨워 주었습니다. 마찬가지로 프로그래밍에서도, 제가 만든 프로그램을 사용자가 어떻게 사용할지, 그리고 이를 통해 어떻게 더 나은 방향으로 개선할 수 있을지 고민합니다. 단순히 기능이 구현되는 것에 그치지 않고, 그 프로그램이 사용자의 삶에 어떤 영향을 미칠지 생각하며 개발하는 과정에서 만족을 느낍니다. </p>
+        <p> 프로그램을 사용자 입장에서 바라보며 그들의 경험을 개선하려는 노력은 마치, 사람들이 제 음악을 듣고 그들만의 의미를 찾을 수 있게 만든 것처럼, 더 나은 방향으로 발전할 수 있다는 확신을 줍니다. 이를 통해 저는 풀스택 개발자로서 사용자의 삶에 긍정적인 영향을 미치는 서비스를 만들고자 합니다. </p>
+        <p> 결국, 사용자 경험을 개선하고 그들이 필요로 하는 서비스를 제공하는 것이 풀스택 개발자로서의 목표이며, 그 과정에서 얻는 성취감은 더욱 큰 의미를 가집니다. 저는 앞으로도 사람들에게 실제로 도움이 되는, 직관적이고 효율적인 웹 서비스를 개발하기 위해 끊임없이 노력할 것입니다. </p>   
+    </div>
+</div>
+{% endblock %}

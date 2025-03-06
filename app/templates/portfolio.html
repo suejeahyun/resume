@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}포트폴리오{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio_style.css') }}">
+
+<h1>포트폴리오</h1>
+<div class="content">
+    <ul>
+        <li><a href="https://github.com/suejeahyun/portfolio">Github</a></li>
+        <li><a href="https://github.com/suejeahyun/portfolio/tree/1-cctv_project_1">CCTV를 기반으로 한 주차장 관리자 연동 웹 구현</a></li>
+    </ul>
+    <div class="slider-container">
+        <div class="slider" id="cctv1">
+            <button class="prev" onclick="changeSlide(-1, 'cctv1')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1, 'cctv1')">&#10095;</button>
+            {% for image in cctv1_images %}
+                <div class="slide">
+                    <img src="{{ url_for('static', filename=image) }}" alt="CCTV1 슬라이드 이미지">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="https://github.com/suejeahyun/portfolio/tree/2-cctv_project_2">사물인식을 활용한 스마트시티 CCTV 개발</a></li>
+    </ul>
+    <div class="slider-container">
+        <div class="slider" id="cctv2">
+            <button class="prev" onclick="changeSlide(-1, 'cctv2')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1, 'cctv2')">&#10095;</button>
+            {% for image in cctv2_images %}
+                <div class="slide">
+                    <img src="{{ url_for('static', filename=image) }}" alt="CCTV2 슬라이드 이미지">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="https://github.com/suejeahyun/portfolio/tree/3-papercup_project_1">CNN을 활용한 불량 검출 스마트팩토리 개발</a></li>
+    </ul>
+    <div class="slider-container">
+        <div class="slider" id="papercup">
+            <button class="prev" onclick="changeSlide(-1, 'papercup')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1, 'papercup')">&#10095;</button>
+            {% for image in papercup_images %}
+                <div class="slide">
+                    <img src="{{ url_for('static', filename=image) }}" alt="Papercup 슬라이드 이미지">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/portfolio_slider.js') }}"></script>
+{% endblock %}

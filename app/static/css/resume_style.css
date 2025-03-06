@@ -1,0 +1,101 @@
+.introduction {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.Develop {
+    font-size: 1.2em;
+}
+
+.highlight {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px;
+    background-color: white; /* 배경색을 흰색으로 설정 */
+    color: black; /* 글자색을 검은색으로 설정 */
+    border: 2px solid black; /* 윤곽선을 검은색으로 설정 */
+    border-radius: 25px; /* 타원 형태로 만들기 */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 배경색과 글자색의 변화에 부드러운 전환 효과 추가 */
+}
+
+.highlight:hover {
+    background-color: #f0f0f0; /* 호버 시 배경색을 살짝 회색으로 변경 */
+    color: black; /* 글자색은 검은색으로 유지 */
+}
+
+.Education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 두 개의 열로 나누기 */
+    gap: 20px; /* 아이템들 간의 간격 */
+    margin-top: 30px;
+}
+
+.Education-item {
+    padding: 20px;
+    background-color: #f9f9f9; /* 배경 색상 */
+    border: 2px solid #ddd; /* 경계선 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
+}
+
+.Education-item p {
+    margin: 5px 0; /* 각 p 태그 간의 간격 */
+    font-size: 1em; /* 기본 폰트 크기 */
+    color: #333; /* 글자 색 */
+}
+
+.Education-item p:first-child {
+    font-weight: bold; /* 첫 번째 p 태그는 굵은 글씨로 강조 */
+    color: #444; /* 약간 더 어두운 색상 */
+}
+
+.Education-item p:not(:first-child) {
+    color: #666; /* 나머지 항목은 조금 더 연한 색상 */
+}
+
+@media (max-width: 768px) {
+    .Education-grid {
+        grid-template-columns: 1fr; /* 화면이 작아지면 한 열로 표시 */
+    }
+}
+
+.Education-History {
+    margin-top: 40px;
+}
+
+.Education-History h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Education-History-item p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* 제목 스타일 */
+.Self-introduction h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* 각 항목에 대한 스타일 */
+.Self-introduction p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* 각 항목의 제목 스타일 */
+.Self-introduction h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}

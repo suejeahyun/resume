@@ -1,0 +1,117 @@
+/* 페이지 전체 스타일 */
+.content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* 링크 목록 스타일 */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #5c5c5c;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    ul li a {
+        font-size: 1rem;
+    }
+}
+
+/* 슬라이드 컨테이너 */
+.slider-container {
+    display: inline-block;
+    width: 80%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* 슬라이드 기본 스타일 */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* 개별 슬라이드 */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* 활성화된 슬라이드 */
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* 이전/다음 버튼 스타일 */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

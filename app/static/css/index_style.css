@@ -1,0 +1,66 @@
+.content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slide-in {
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 버튼 스타일 */
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px;
+    background-color: white; /* 배경색을 흰색으로 설정 */
+    color: black; /* 글자색을 검은색으로 설정 */
+    border: 2px solid black; /* 윤곽선을 검은색으로 설정 */
+    border-radius: 25px; /* 타원 형태로 만들기 */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 배경색과 글자색의 변화에 부드러운 전환 효과 추가 */
+    opacity: 0; /* 처음에는 안 보이도록 설정 */
+    transform: translateY(10px); /* 아래에서 올라오는 효과 */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #f0f0f0; /* 호버 시 배경색을 살짝 회색으로 변경 */
+    color: black; /* 글자색은 검은색으로 유지 */
+}
+
+.btn.show {
+    opacity: 1; /* 나타남 */
+    transform: translateY(0); /* 원래 위치로 이동 */
+}

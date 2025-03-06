@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}홈 - 이력서 사이트{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+<div class="content">
+<h2>풀스택 개발자의 꿈나무</h2>
+<h1>서 재 현</h1>
+<img class="fade-in" src="static/img/profile-image.jpg" alt="profile image" width="300" height="400" style="border-radius: 50%;">
+<h4>적극적이고 활발한 성격으로 새로운 도전에 열려 있습니다.</h4>
+<h4>원활한 커뮤니케이션을 통해 협업을 중요하게 생각합니다.</h4>
+<h4>한 가지 일을 끝까지 해내는 끈기와 책임감 보유하고 있습니다.</h4>
+<div class="button-container">
+    <a href="{{ url_for('main.portfolio') }}" class="btn hidden">포트폴리오 보기</a>
+    <a href="{{ url_for('main.resume') }}" class="btn hidden">이력서 보기</a>
+</div>
+</div>
+<script src="{{ url_for('static', filename='js/index_script.js') }}"></script>
+
+{% endblock %}
